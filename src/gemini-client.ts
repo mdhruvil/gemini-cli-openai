@@ -112,10 +112,8 @@ export class GeminiApiClient {
 		}
 
 		try {
-			const initialProjectId = "default-project";
 			const loadResponse = (await this.authManager.callEndpoint("loadCodeAssist", {
-				cloudaicompanionProject: initialProjectId,
-				metadata: { duetProject: initialProjectId }
+				metadata: { ideType: "IDE_UNSPECIFIED", platform: "PLATFORM_UNSPECIFIED", pluginType: "GEMINI" }
 			})) as ProjectDiscoveryResponse;
 
 			if (loadResponse.cloudaicompanionProject) {

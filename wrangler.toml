@@ -6,8 +6,13 @@ compatibility_flags = ["nodejs_compat"]
 
 # --- KV Namespaces ---
 kv_namespaces = [
-  { binding = "GEMINI_CLI_KV", id = "6c761101b4a34c089e6a123f2782c5fd" }
+  { binding = "GEMINI_CLI_KV", id = "ad40fe7edb8d4e0c88ded90d750ee6c2" }
 ]
+
+[[routes]]
+pattern = "geli.mdhruvil.page"
+custom_domain = true
+
 
 # [vars]
 
